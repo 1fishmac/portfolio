@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import Headline from "./components/typo/Headline.typo.components";
+import NavBar from "./components/organisms/NavBar.organisms.components";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -13,7 +15,23 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`antialiased`}>{children}</body>
+      <body>
+        <div className="flex w-screen flex-col items-center justify-center">
+          <Headline className="font-outfit mt-4 md:mt-8 xl:mt-12">
+            Portfolio
+          </Headline>
+          <NavBar
+            hrefs={["/about", "/projects", "/contact", "/pro-bono"]}
+            childrens={[
+              <span>About</span>,
+              <span>Projects</span>,
+              <span>Contact</span>,
+              <span>Pro Bono</span>
+            ]}
+          ></NavBar>
+        </div>
+        <main>{children}</main>
+      </body>
     </html>
   );
 }
