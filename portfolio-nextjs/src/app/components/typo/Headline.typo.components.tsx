@@ -20,9 +20,9 @@ export default function Headline({
   const sizeClass = `text-2xl md:text-4xl xl:text-8xl`;
   return (
     <h1
-      className={`${sizeClass} ${className ?? ""} ${centered ? "text-center" : ""} ${
+      className={`${sizeClass} ${centered ? "text-center" : ""} ${
         bold ? "font-bold" : ""
-      } ${italic ? "italic" : ""} ${uppercase ? "uppercase" : ""}`}
+      } ${italic ? "italic" : ""} ${uppercase ? "uppercase" : ""} ${className}`}
     >
       {children}
     </h1>
