@@ -16,7 +16,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <div className="flex w-screen flex-col items-center justify-center">
+        <div className="flex flex-col items-center justify-center">
           <Headline className="font-outfit mt-4 md:mt-8 xl:mt-12">
             Portfolio
           </Headline>
