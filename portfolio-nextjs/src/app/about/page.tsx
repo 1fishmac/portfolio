@@ -1,4 +1,3 @@
-import Headline from "../components/typo/Headline.typo.components";
 import Paragraph from "../components/typo/Paragraph.typo.components";
 
 type AboutProps = {
