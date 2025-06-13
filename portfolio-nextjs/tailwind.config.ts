@@ -10,11 +10,10 @@ const config: Config = {
       },
       fontFamily: {
         outfit: ["Outfit", "sans-serif"],
-        urbanist: ["Urbanist", "sans-serif"]
+        savate: ["Savate", "serif"]
       }
     }
-  },
-  plugins: []
+  }
 };
 
 export default config;
